@@ -8,14 +8,16 @@
     <style>
         /* navbar */
         .header{
-            margin-left: 5%;
+            /* margin-left: 5%; */
+            margin-top: 0%;
             display: flex;
             justify-content: space-between;
-            width: 90%;
+            width: 100%;
             height: 70px;
-            margin-right: 5%;
+            /* margin-right: 5%; */
             position: fixed;
             background-color: white;
+            box-shadow:  2px 2px rgb(235, 233, 233);
         }
 
         .body_div{
@@ -30,14 +32,14 @@
        }
        .invest_fund_left{
            width: 30%;
-           
-           border: 1px solid black;
+           box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+           /* border: 1px solid black; */
            border-radius: 10px;
        }
        .invest_fund_right{
            width: 30%;
-           
-           border: 1px solid black;
+           box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+           /* border: 1px solid black; */
            border-radius: 10px;
        }
        .limited_addition{
@@ -47,6 +49,8 @@
   clear: right;
   border-radius: 0px 10px 0px 10px;
   text-align: center;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 15px 0 rgba(0, 0, 0, 0.19);
+          
        }
 .left_id_invest_fund{
     display: flex;
@@ -89,8 +93,8 @@ flex-wrap: nowrap;
 }
 .last_chance_firstdiv{
     width: 28%;
-    
-    border: 1px solid black;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+    /* border: 1px solid black; */
     border-radius: 10px;
   
     
@@ -120,6 +124,21 @@ flex-wrap: nowrap;
     padding-right: 6%; */
     margin-left: 6%;
     margin-right: 6%;
+    
+}
+
+.Invest_now_tab{
+    width: 100%;
+ 
+    background-color: black;
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+.quick_invest_banner{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
     
 }
 
@@ -362,8 +381,20 @@ flex-wrap: nowrap;
 <!--  -->
 </div>
 
-
-
+<!--  -->
+<br>
+<div class="Invest_now_tab">
+    
+    <div class="quick_invest_banner">
+        
+    <div class="quick_invest">
+        <h3>Quick Invest  &#10052</h3>
+        <p>Tell us your preferences and let us choose investees for you.</p>
+    </div>
+    <button>Invest Now  &#8594;</button>
+    
+</div>
+</div>
 
 
 </div>
