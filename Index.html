@@ -32,13 +32,13 @@
        }
        .invest_fund_left{
            width: 30%;
-           box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+           box-shadow: 0 4px 6px 0 rgba(98, 97, 97, 0.2), 0 5px 13px 0 rgba(140, 140, 140, 0.19);
            /* border: 1px solid black; */
            border-radius: 10px;
        }
        .invest_fund_right{
            width: 30%;
-           box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+           box-shadow: 0 4px 6px 0 rgba(98, 97, 97, 0.2), 0 5px 13px 0 rgba(140, 140, 140, 0.19);
            /* border: 1px solid black; */
            border-radius: 10px;
        }
@@ -138,7 +138,23 @@ box-shadow: 0 3px 6px 0 rgba(60, 60, 60, 0.2), 0 4px 8px 0 rgba(74, 73, 73, 0.19
     display: flex;
     justify-content: space-evenly;
     background-color: #DFF3ED;
+    /* border-radius:0px 0px 10px 10px ; */
+
+}
+.height_top{
+    width: 100%;
+    height: 10px;
+    background-color: #DFF3ED;
+    /* border-radius:0px 0px 10px 10px ; */
+}
+.height{
+    width: 100%;
+    height: 10px;
+    background-color: #DFF3ED;
     border-radius:0px 0px 10px 10px ;
+}
+.bottom_id_fund div{
+    font-size: small;
 }
 .symbols{
      display: flex;
@@ -159,7 +175,40 @@ flex-wrap: nowrap;
   
     
 }
+.italic_text{
+    font-family: 'Inter';
+    color: grey;
+    text-align: center;
+}
 
+.yellow_bar{
+display: flex;
+width: 80%;
+height: 10px;
+
+margin-left: 10%;
+margin-right: 10%;
+margin-top:5%;
+margin-bottom: 3%;
+}
+.yellow_part{
+    width: 60%;
+    background-color: #ffc107;
+    height: 10px;
+    border-radius: 5px 0px 0px 5px;
+}
+.grey_part{
+    width: 40%;
+    background-color: grey;
+    height: 10px;
+    border-radius: 0px 5px 5px 0px;
+}
+.yellow_down_text{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: small;
+}
 .last_chance_dp{
     width: 100%;
     
@@ -241,6 +290,7 @@ flex-wrap: nowrap;
 </div>
 <!--  -->
 <br>
+
 <div class="id_tenure">
 
     <div>
@@ -259,28 +309,30 @@ flex-wrap: nowrap;
 </div>
 <!--  -->
 <br>
+<div class="height_top"></div>
 <div class="bottom_id_fund">
-
+    
    <div> 
        
  <div> &#9734; 2.15 k</div>
 
-    <p>Livelihood days</p>
+    <div>Livelihood days</div>
      </div>
 <div >
- <div>&#9734; 10</div>
-    <p>Farmers</p>
+ <div>&#9774; 10</div>
+    <div>Farmers</div>
 </div>
 <div >
- <div> &#9734; 42</div>
-    <p>Investors</p>
+ <div> &#9786; 42</div>
+    <div>Investors</div>
 </div>
-
+<br>
 </div>
+<div class="height"></div>
     </div>
 
     <div class="invest_fund_right">
-        <div class="limited_addition">limited edition</div>
+        <div class="limited_addition">Limited Edition</div>
         <br>
         <br>
 <div class="right_id_invest_fund">
@@ -292,7 +344,6 @@ flex-wrap: nowrap;
 </div>
 <br>
 <div class="id_tenure">
-
     <div>
         <div class="grey_color">Your returns</div>
         <p> <strong class="big_size">8%</strong> p.a.</p>
@@ -311,24 +362,27 @@ flex-wrap: nowrap;
 
 
 <!--  -->
+<div class="height_top"></div>
 <div class="bottom_id_fund">
-
+    
     <div> 
         
   <div> &#9734; 2.15 k</div>
  
-     <p>Livelihood days</p>
+     <div>Livelihood days</div>
       </div>
  <div >
-  <div>&#9734; 10</div>
-     <p>Farmers</p>
+  <div>&#9774; 10</div>
+     <div>Farmers</div>
  </div>
  <div >
-  <div> &#9734; 42</div>
-     <p>Investors</p>
+  <div> &#9786; 42</div>
+     <div>Investors</div>
  </div>
  
  </div>
+ <div class="height"></div>
+ 
     </div>
 </div>
 <!--  -->
@@ -339,27 +393,31 @@ flex-wrap: nowrap;
 <div class="last_chance_firstdiv">
   <div class="last_chance_dp">
       <img src="https://rangde-stg.imgix.net/bImg/Seeta$FS3-img.jpg?fit=crop&crop=faces&auto=compress,format&w=350&h=300" alt="">
-      <div class="bottom-left">Kali Navi</div>
-      <div class="bottom-left">Rajasthan ,India</div>
+      <!-- <div class="">Kali Navi</div>
+      <div class="">Rajasthan ,India</div> -->
   </div>
-  <p>some random text</p>
-  <div></div>
-  <div>some ₹12000 more to go</div>
+  <p class="italic_text"><i>some random text ;</i></p>
+  <div class="yellow_bar">
+      <div class="yellow_part"></div>
+      <div class="grey_part"></div>
+  </div>
+  <div class = "yellow_down_text">some ₹12000 more to go</div>
+  <br>
   <div class="id_tenure">
 
     <div>
-        <p>Your returns</p>
-        <p>8% p.a.</p>
+        <div class="grey_color">Your returns</div>
+        <p> <strong class="big_size">8%</strong> p.a.</p>
     </div>
     <div>
-        <p>Tenure</p>
-        <p>12-18 MONTHS</p>
+        <div class="grey_color">Tenure</div>
+        <p><strong class="big_size">12 -15</strong> MONTHS</p>
     </div>
 </div>
 
 <div class="id_buttons">
-    <button>details <strong> &#8594;</strong></button>
-    <button>invest <strong> &#8594;</strong></button>
+    <button class="blue_buttons">details <strong> &#8594;</strong></button>
+    <button class="white_buttons">invest <strong> &#8594;</strong></button>
 </div> 
 <!-- -->
 <div class="bottom_last_invest">
@@ -374,27 +432,31 @@ flex-wrap: nowrap;
 <div class="last_chance_firstdiv">
     <div class="last_chance_dp">
         <img src="https://rangde-stg.imgix.net/bImg/Seeta$FS3-img.jpg?fit=crop&crop=faces&auto=compress,format&w=350&h=300" alt="">
-        <div class="bottom-left">Kali Navi</div>
-        <div class="bottom-left">Rajasthan ,India</div>
+       
     </div>
-    <p>some random text</p>
-    <div></div>
-    <div>some ₹12000 more to go</div>
+    <p class="italic_text"><i>some random text ;</i></p>
+    <div class="yellow_bar">
+        <div class="yellow_part"></div>
+        <div class="grey_part"></div>
+    </div>
+    <div class = "yellow_down_text">some ₹12000 more to go</div>
+   <br>
+   
     <div class="id_tenure">
   
-      <div>
-          <p>Your returns</p>
-          <p>8% p.a.</p>
-      </div>
-      <div>
-          <p>Tenure</p>
-          <p>12-18 MONTHS</p>
-      </div>
+        <div>
+            <div class="grey_color">Your returns</div>
+            <p> <strong class="big_size">8%</strong> p.a.</p>
+        </div>
+        <div>
+            <div class="grey_color">Tenure</div>
+            <p><strong class="big_size">12 -15</strong> MONTHS</p>
+        </div>
   </div>
   
   <div class="id_buttons">
-      <button>details <strong> &#8594;</strong></button>
-      <button>invest <strong> &#8594;</strong></button>
+      <button class="blue_buttons">details <strong> &#8594;</strong></button>
+      <button class="white_buttons">invest <strong> &#8594;</strong></button>
   </div> 
   <!-- -->
   <div class="bottom_last_invest">
@@ -409,28 +471,32 @@ flex-wrap: nowrap;
 <div class="last_chance_firstdiv">
     <div class="last_chance_dp">
         <img src="https://rangde-stg.imgix.net/bImg/Seeta$FS3-img.jpg?fit=crop&crop=faces&auto=compress,format&w=350&h=300" alt="">
-        <div class="bottom-left">Kali Navi</div>
-        <div class="bottom-left">Rajasthan ,India</div>
+        
     </div>
-    <p>some random text</p>
-    <div></div>
-    <div>some ₹12000 more to go</div>
-    <div class="id_tenure">
+    <p class="italic_text"><i>some random text ;</i></p>
+    <div class="yellow_bar">
+        <div class="yellow_part"></div>
+        <div class="grey_part"></div>
+    </div>
+    <div
+     class = "yellow_down_text">some ₹12000 more to go</div>
+   <br>
+     <div class="id_tenure">
   
-      <div>
-          <p>Your returns</p>
-          <p>8% p.a.</p>
-      </div>
-      <div>
-          <p>Tenure</p>
-          <p>12-18 MONTHS</p>
-      </div>
+        <div>
+            <div class="grey_color">Your returns</div>
+            <p> <strong class="big_size">8%</strong> p.a.</p>
+        </div>
+        <div>
+            <div class="grey_color">Tenure</div>
+            <p><strong class="big_size">12 -15</strong> MONTHS</p>
+        </div>
   </div>
   
   <div class="id_buttons">
-      <button>details <strong> &#8594;</strong></button>
-      <button>invest <strong> &#8594;</strong></button>
-  </div> 
+    <button class="blue_buttons">details <strong> &#8594;</strong></button>
+    <button class="white_buttons">invest <strong> &#8594;</strong></button>
+</div>
   <!-- -->
   <div class="bottom_last_invest">
     <br>
@@ -456,7 +522,7 @@ flex-wrap: nowrap;
         <p>Tell us your preferences and let us choose investees for you.</p>
     </div>
     <button>Invest Now  &#8594;</button>
-    
+    <!--  -->
 </div>
 </div>
 
