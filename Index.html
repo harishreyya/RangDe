@@ -326,6 +326,150 @@ width: 100%;
     font-size: small;
     font-weight: bold;
 }
+.pagination{
+    display: flex;
+    font-size: large;
+    justify-content: space-evenly;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.page_left{
+    font-size: large;
+    color: grey;
+}
+.page_right{
+    font-size: large;
+    width: 6%;
+border-radius: 50%;
+text-align: center;
+    
+}
+.page_right:hover{
+    background-color: #3682f4;
+color: white;
+    
+}
+.pagination_next_line{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.page_1{
+    background-color: #3682f4;
+color: white;
+width: 6%;
+border-radius: 50%;
+text-align: center;
+cursor: pointer;
+}
+.page_2{
+    
+background-color: white;
+
+width: 6%;
+border-radius: 50%;
+text-align: center;
+cursor: pointer;
+}
+.page_2:hover{
+    background-color: #3682f4;
+color: white;
+}
+
+.footer{
+    text-align: center;
+    background-color: #343a40;
+    color: white;
+}
+.footer_body{
+   margin-left: 10%;
+   margin-right: 10%;
+
+}
+.footer_topcards{
+display: flex;
+justify-content: space-evenly;
+}
+.footer_card_1{
+    width: 20%;
+    border-radius: 6px;
+    background-color: #ffc107;
+    color: white;
+
+}
+.footer_card_2{
+    width: 20%;
+    border-radius: 6px;
+    background-color: #20c997;
+    color: white;
+
+}
+.footer_card_3{
+    width: 20%;
+    border-radius: 6px;
+    background-color: #6f42c1;;
+    color: white;
+
+}
+.footer_card_4{
+    width: 20%;
+    border-radius: 6px;
+    background-color: #dc3545;
+    color: white;
+
+}
+.card_bold_line{
+    margin-top: 6%;
+    font-size: x-large;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 6%;
+}
+.card_symbol_right{
+    float: right;
+    clear: right;
+    margin-right: 3%;
+    margin-top:2% ;
+}
+.card_line_below{
+    font-size: small;
+    text-align: left;
+    margin-left: 6%;
+    margin-bottom: 6%;
+}
+.card_4_bottom_line{
+    /* float: right; */
+    width: 20%;
+    font-size: x-small;
+   margin-left: 76%;
+   text-align: left;
+}
+.line_below_card_section{
+display: flex;
+justify-content: space-between;
+margin-left: 4%;
+margin-right: 4%;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.section_bold{
+    text-decoration: underline;
+    font-weight: bold;
+}
+.bottom_info_support{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.support_info{
+    width: 17%;
+    text-align: left;
+}
+.image_store_img{
+    width: 50%;
+}
     </style>
 </head>
 <body>
@@ -891,15 +1035,108 @@ width: 100%;
         <br>
 </div>
 <br>
+<br>
 
 
 <div class="pagination">
-    <p>&#10594;</p>
-    <p>1</p>
-    <p>2</p>
-    <p>3</p>
-    <p>4</p>
-    <p>&#10596;</p>
+    <div class="page_left">&#8606;</div>
+    <div class="page_1">1</div>
+    <div class="page_2">2</div>
+    <div class="page_2">3</div>
+    <div class="page_2">4</div>
+    <div class="page_right">&#8608;</div>
+
+</div>
+<p class="pagination_next_line">1 - 6 of 19 investees you can invest in</p>
+<br>
+<!--  -->
+<div class="footer">
+    <h1>Our progress</h1>
+    <p>Since 1st September 2019</p>
+    <div class="footer_body">
+        <div class="footer_topcards">
+            <div class="footer_card_1">
+                <div class="card_symbol_right">&#9776; &#8377;</div>
+                <div class="card_bold_line">&#8377;25,45,900</div>
+                <div class="card_line_below">Loans Distributed</div>
+            </div>
+            <div class="footer_card_2">
+                <div class="card_symbol_right">&#9786;&#9787;</div>
+                <div class="card_bold_line">280</div>
+                <div class="card_line_below">Social Investors</div>
+            </div>
+            <div class="footer_card_3">
+                <div class="card_symbol_right">&#9882; &#9873;</div>
+                <div class="card_bold_line">75</div>
+                <div class="card_line_below">Loans Fulfilled</div>
+            </div>
+            <div class="footer_card_4">
+                <div class="card_symbol_right">&#10036;</div>
+                <div class="card_bold_line">51.06%</div>
+                <div class="card_line_below">NPA</div>
+            </div>
+
+
+        </div>
+        <p class="card_4_bottom_line">
+            *This NPA is unusually high due to delayed repayments and extended moratorium for loans during the Covid-19 pandemic. It is expected to go down soon.
+        </p>
+<!--  -->
+        <div class="line_below_card_section">
+            <p>Updated 5 mins ago</p>
+            <p class="section_bold">View payment details</p>
+        </div>
+<!--  -->
+        <br>
+        <div class="bottom_info_support">
+            <div class="support_info">
+                <h2>HELP</h2>
+                <p>FAQs</p>
+                <p>Contact Us</p>
+                <p>
+                    Social Investor Dictionary</p>
+                    <p>support@rangde.in
+                    </p>
+                    <p>+91 80 42756643</p>
+            </div>
+            <div class="support_info">
+                <h2>DISCOVER</h2>
+                <p>About Us</p>
+                <p>Statistics</p>
+                <p>Impact Partners
+                   
+                    </p>
+                <p>
+                    Media and Awards</p>
+                    <p> 
+                        Rang De on NDTV
+                    </p>
+                    
+            </div>
+            <div class="support_info">
+                <h2>ENGAGE
+                    
+                    </h2>
+                <p>Blog</p>
+                <p>Refer a borrower</p>
+                <p>
+                    Partner with us</p>
+                    <p>CSR
+                    </p>
+                    
+            </div>
+            <div class="support_info">
+                <h2>DOWNLOAD THE APP</h2>
+               <img class="image_store_img" src="https://rangde.imgix.net/images/page-home/app-store-v2.png?auto=compress" alt="">
+               <img class="image_store_img" src="https://rangde.imgix.net/images/page-home/google-play-v2.png?auto=compress" alt="">
+            </div>
+            <div class="support_info">
+                <h2>LED BY AN</h2>
+                <img src="https://rangde.imgix.net/images/footer/ashoka-fellow.png?auto=compress" alt="">
+            </div>
+            
+        </div>
+    </div>
 
 </div>
 </body>
