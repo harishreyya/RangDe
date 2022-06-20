@@ -3,14 +3,28 @@
 <head>
     <title>jQuery Structure</title>
     <!-- <script src="jquery-latest.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+      
+</head>
+<body>
+    <!-- <input type="button" id="button1" value="click me"/> -->
+    <input type="button" id="button2" value="click me"/>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <script type="text/javascript">
 
-        jQuery(document).ready(function(){
-            jQuery("#button1").click(function(){
-                alert("jquery")
-            })
-        })
+
+            // $("#button1").click(function(){
+            //     alert("jquery")
+            // }).css("background-color","red").css("color","white").css("border","none")
+       
+     $(document).ready(function(){
+        if($("#button2").length > 0){
+                alert("greater than 0")
+            }else{
+                alert("smaller than 0")
+            }
+     })     
 
     //   window.onload = function()
     //   {
@@ -21,10 +35,5 @@
     //     alert("j-query")
     //   }
 
-    </script>   
-</head>
-<body>
-    <input type="button" id="button1" value="click me"/>
-
-</body>
+    </script> 
 </html>
