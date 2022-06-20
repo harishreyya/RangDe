@@ -1,12 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>jQuery Structure</title>
+    <!-- <script src="jquery-latest.min.js"></script> -->
+    <script type="text/javascript">
+
+      window.onload = function()
+      {
+        document.getElementById("button1").addEventListener("click",clickHandler,false)
+      };
+
+      function clickHandler(){
+        alert("j-query")
+      }
+
+    </script>   
 </head>
 <body>
-    <h1>Invest</h1>
+    <input type="button" id="button1" value="click me"/>
+
 </body>
 </html>
