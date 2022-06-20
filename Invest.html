@@ -3,16 +3,23 @@
 <head>
     <title>jQuery Structure</title>
     <!-- <script src="jquery-latest.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <script type="text/javascript">
 
-      window.onload = function()
-      {
-        document.getElementById("button1").addEventListener("click",clickHandler,false)
-      };
+        jQuery(document).ready(function(){
+            jQuery("#button1").click(function(){
+                alert("jquery")
+            })
+        })
 
-      function clickHandler(){
-        alert("j-query")
-      }
+    //   window.onload = function()
+    //   {
+    //     document.getElementById("button1").addEventListener("click",clickHandler,false)
+    //   };
+
+    //   function clickHandler(){
+    //     alert("j-query")
+    //   }
 
     </script>   
 </head>
