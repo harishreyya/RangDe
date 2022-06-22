@@ -10,10 +10,15 @@ $(function() {
   //  $(".green-box").hide(2000);
   //  $(".blue-box").slideUp(2000);  
   //  $(".blue-box").slideDown(2000);
-   $(".blue-box").hide();
+  //  $(".blue-box").slideToggle(2000);
+  //  $("p").hide()
+  //  $("p").slideDown(1000);
    
-   $(".blue-box").slideDown(2000);
-   
-   
+  // $(".blue-box").animate({
+  //   "margin-left":"+=200px"
+  // },2000,"linear");
+  $(".blue-box").animate({
+    "margin-left":"+=200px"
+  },2000,"linear");
 
 });
