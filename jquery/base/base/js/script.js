@@ -39,9 +39,15 @@ $(function() {
   // $(".blue-box").delay(2000).fadeTo(1000,0.8).fadeOut().delay(500).fadeIn();
 
   //callback functions
-  $(".red-box").fadeTo(1000,0.2,function(){
-    alert("whats up call back functions")
-  });
+  // $(".red-box").fadeTo(3000,0.2,function(){
+  //   alert("whats up call back functions")
+  // });
 
+
+  $(".red-box").fadeTo(1000,0.2,function(){
+       $(".green-box").fadeTo(1000,0.5,()=>{
+        $(".blue-box").fadeTo(1000,0.5).fadeOut().delay(500).fadeIn()
+       })
+    });
 
 });
