@@ -15,4 +15,3 @@ setInterval(function(){
   console.log(galleryImage.attr("src"));
 },2000)
 });
-// 
