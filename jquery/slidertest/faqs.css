@@ -1,0 +1,240 @@
+.faq_container_full {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  width: 100%;
+}
+
+.left_side_section {
+  background-color: #DAEDFF;
+  height: 1071px;
+  width: 547px;
+  margin-top: -160px;
+  margin-left: -150px;
+  position: sticky;
+  top: 0;
+}
+
+.faq_left_heading {
+  display: none;
+}
+
+.right_side_section {
+  height: 4500px;
+  width: 600px;
+  margin-left: 55px;
+}
+
+.faq_heading {
+  color: #292D36;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 38px;
+  line-height: 40px;
+  position: absolute;
+  width: 542px;
+  height: 40px;
+  left: 635px;
+  top: 135px;
+}
+
+.questions_heading {
+  width: 360px;
+  height: 64px;
+  background-color: #DAEDFF;
+  border-radius: 16px;
+  border: none !important;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 24px;
+  color: #292D36;
+  text-align: left;
+  padding-left: 13px;
+  margin-bottom: 40px;
+}
+/* ---- */
+.heading_content a button:focus {
+  border: none;
+  outline: none;
+}
+/* ----- */
+.questions_heading:hover {
+  background: #369EFE;
+  color: #FFFFFF;
+}
+
+.heading_content {
+  margin-top: 150px;
+  margin-left: 120px;
+}
+
+
+.heading_content a button {
+  padding-left: 40px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 24px;
+}
+
+
+.answer_section {
+  margin-top: 130px;
+  overflow: visible;
+  width: 100%;
+  height: 800px;
+  color: #292D36;
+}
+
+.sub_question_heading {
+  font-family: 'Inter';
+  color: #292D36;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.sub_question_heading+p {
+  font-family: 'Inter';
+  color: #292D36;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.more_question_heading{
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 24px;
+margin-top: 50px;
+text-align: center;
+color: #369EFE;
+
+}
+.visit_page{
+  color: #369EFE;
+}
+.visit_page:hover{
+  color: #369EFE;
+}
+
+/* ------------------------------------------- */
+
+@media (max-width:768px) {
+  
+  .faq_container_full {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left_side_section {
+    background-color: white;
+    height: 100px;
+    /* width: 547px; */
+    /* margin-top: -60px;
+        margin-left: -150px; */
+    position: sticky;
+    padding-top: 100px;
+    padding-bottom: 120px;
+    top: 0px;
+
+  }
+
+  .right_side_section {
+    height: 5450px;
+    width: 100%;
+    margin-left: -25px !important;
+    padding-left: 0px;
+
+  }
+
+  .heading_content {
+    margin-top: 0%;
+    display: flex;
+    overflow-x: scroll;
+    margin-left: 145px;
+  }
+
+  .faq_heading {
+    position: absolute;
+    width: 306px;
+    left: 20px;
+    top: 50px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 24px;
+    font-style: normal;
+  }
+
+  .faq_left_heading {
+    display: block;
+    position: absolute;
+    width: 306px;
+    height: 24px;
+    margin-left: 155px;
+    margin-top: -28px;
+    margin-bottom: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 24px;
+    color: #292D36;
+  }
+
+  .questions_heading {
+    margin-left: 10px;
+    /* margin-right: 10px; */
+    text-align: center;
+    width: 300px;
+    /* height: 24px; */
+    font-family: 'Inter';
+    /* font-style: normal; */
+    font-weight: 400;
+    font-size: 19px;
+    /* line-height: 24px; */
+    margin-top: 20px;
+  }
+
+  .answer_section {
+    margin-top: 100px;
+    overflow: visible;
+    width: 100%;
+    margin-right: 15px;
+    margin-left: 0px;
+    font-family: 'Inter';
+    color: #292D36;
+    
+  }
+
+  .sub_question_heading {
+    font-family: 'Inter';
+    color: #292D36;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  .sub_question_heading+p {
+    font-family: 'Inter';
+    color: #292D36;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+
+  .heading_content a button {
+    padding-left: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #292D36;
+    font-family: 'Inter';
+  }
+
+}

@@ -1,0 +1,809 @@
+<!doctype html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html lang='en' xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" xmlns:th='http://www.thymeleaf.org'
+  xmlns='http://www.w3.org/1999/xhtml' xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+  prefix="og: http://ogp.me/ns#" layout:decorate='~{layouts/site-v2}'>
+
+<head>
+  <!-- <link rel="stylesheet" type="text/css" th:href="@{/static/css/pages/static-pages/static-pages.css}"
+    href="/static/css/pages/static-pages/static-pages.css" /> -->
+  <link rel="stylesheet" type="text/css" th:href="@{/static/css/pages/static-pages/faqs.css}"
+    href="faqs.css" />
+  <title>FAQs | RangDe</title>
+  <meta name="description"
+    content="Invest in fellow Indians and take your social investment Journey to the next level.">
+</head>
+
+<body>
+  <main class="static-pages-wrapper" layout:fragment='content'>
+
+    <!-- previous code -->
+
+    <!-- <div class="container">
+      <h4 class="mb-4">Frequently Asked Questions</h4>
+
+      <p class="section-heading">About Rang De</p>
+      <ul class="questions-list">
+        <li><a class="visit_page" href="#about-us-1" class="scroll">What is this initiative about?</a></li>
+        <li><a href="#about-us-2" class="scroll">What's the difference between the Rang De model and traditional
+            micro-finance?</a></li>
+        <li><a href="#about-us-3" class="scroll">What is the interest rate breakup on the loan products that
+            Rang De offers?</a></li>
+      </ul>
+      <h5 class="section-heading">Microcredit</h5>
+      <ul class="questions-list">
+        <li><a href="#micro-credit-1" class="scroll">What is Microcredit?</a></li>
+        <li><a href="#micro-credit-2" class="scroll">How can Microcredit make a difference?</a></li>
+        <li><a href="#micro-credit-3" class="scroll">How does traditional microfinance work? </a></li>
+        <li><a href="#micro-credit-4" class="scroll">What is an MFI?</a></li>
+      </ul>
+      <h5 class="section-heading">Microventure</h5>
+      <ul class="questions-list">
+        <li><a href="#micro-venture-1" class="scroll">What is Microventure? </a></li>
+        <li><a href="#micro-venture-2" class="scroll">How do Microventures make a difference? </a></li>
+        <li><a href="#micro-venture-3" class="scroll">How are Microventures traditionally financed? </a></li>
+        <li><a href="#micro-venture-4" class="scroll">How do Rang De loans make a difference? </a></li>
+      </ul>
+
+      <h5 class="section-heading">Investing on RangDe.in</h5>
+      <ul class="questions-list">
+        <li><a href="#invest-1" class="scroll">What are the minimum and maximum investments that I can make?</a>
+        </li>
+        <li><a href="#invest-2" class="scroll">Where can I track my investment?</a></li>
+        <li><a href="#invest-3" class="scroll">Are investments on the Rang De platform taxable?</a></li>
+        <li><a href="#invest-4" class="scroll">Do I receive any interest on the invested amount?</a></li>
+        <li><a href="#invest-5" class="scroll">Will I get a receipt for every investment I make?</a></li>
+        <li><a href="#invest-6" class="scroll">What is fund by date?</a></li>
+        <li><a href="#invest-7" class="scroll">What happens if a loan is not funded by the ‘fund by’ date? </a>
+        </li>
+        <li><a href="#invest-8" class="scroll">Why does the investee pay 18% when Social Investors only get a
+            return of up to 7.2%?</a></li>
+        <li><a href="#invest-9" class="scroll">Can I use a credit card as a payment option?</a></li>    
+      </ul>
+
+      <h5 class="section-heading">Process for NRIs and OCI card holders</h5>
+      <ul class="questions-list">
+        <li><a href="#process-1" class="scroll">Do you accept investments from Non-Resident Indians and Overseas
+            Citizens of India card holders?
+          </a></li>
+        <li><a href="#process-2" class="scroll">What are the KYC requirements for NRIs and OCI card holders?
+          </a></li>
+        <li><a href="#process-3" class="scroll">What are the payment options for NRIs and OCI card holders?
+          </a></li>
+      </ul>
+
+      <h5 class="section-heading">Withdrawing your Rang De Credit</h5>
+      <ul class="questions-list">
+        <li><a href="#withdraw-credit-1" class="scroll">I am an existing Rang De social investor and would like
+            to withdraw the investments I have made. What are the terms and conditions for withdrawal?</a>
+        </li>
+        <li><a href="#withdraw-credit-2" class="scroll">How can I place a withdrawal request? </a></li>
+        <li><a href="#withdraw-credit-3" class="scroll">Are there any charges for withdrawals? </a></li>
+        <li><a href="#withdraw-credit-4" class="scroll">Can I withdraw my Rang De Credit to a bank account
+            abroad?</a></li>
+      </ul>
+
+      <h5 class="section-heading">Rang De's Processes</h5>
+      <ul class="questions-list">
+        <li><a href="#rangde-process-1" class="scroll">How does the Rang De model work?</a></li>
+        <li><a href="#rangde-process-2" class="scroll">How long does Rang De take to screen investees?</a></li>
+        <li><a href="#rangde-process-3" class="scroll">Where are Rang De's investees located?</a></li>
+        <li><a href="#rangde-process-4" class="scroll">Can I submit an investee application for myself?</a>
+        </li>
+        <li><a href="#rangde-process-5" class="scroll">Why do so many investees have the same occupation?</a>
+        </li>
+        <li><a href="#rangde-process-6" class="scroll">Why are the surnames of some investees the same? Are they
+            part of the same family?</a></li>
+        <li><a href="#rangde-process-7" class="scroll">How are the investee profiles listed on the website
+            compiled? </a></li>
+      </ul>
+
+
+      <h5 class="section-heading">Investee Application Process</h5>
+      <ul class="questions-list">
+        <li><a href="#investee-process-1" class="scroll">Who are Rang De investees?</a></li>
+        <li><a href="#investee-process-2" class="scroll">How are the investees selected? </a></li>
+      </ul>
+
+
+      <h5 class="section-heading">Rang De's Impact partners</h5>
+      <ul class="questions-list">
+        <li><a href="#impact-partners-1" class="scroll">Who is an Impact Partner? </a></li>
+        <li><a href="#impact-partners-2" class="scroll">Why do we need Impact Partners?</a></li>
+        <li><a href="#impact-partnerss-3" class="scroll">Why do impact partners get a big portion of the
+            interest?</a></li>
+      </ul>
+
+      <h5 class="section-heading">Interest Rates</h5>
+      <ul class="questions-list">
+        <li><a href="#interest-rates-1" class="scroll">What is APR?</a></li>
+        <li><a href="#interest-rates-2" class="scroll">How different is APR from the flat rate method?</a></li>
+      </ul>
+
+      <h5 class="section-heading">Transition from RangDe.org to RangDe.in</h5>
+      <ul class="questions-list">
+        <li><a href="#transition-process-1" class="scroll">What is the difference between the RangDe.org and
+            RangDe.in?</a></li>
+        <li><a href="#transition-process-2" class="scroll">What will happen to the funds that are invested on
+            RangDe.org?</a></li>
+        <li><a href="#transition-process-3" class="scroll">What will happen to funds that have not been repaid?
+          </a></li>
+        <li><a href="#transition-process-4" class="scroll">What is the difference between the old platform and
+            the new? </a></li>
+        <li><a href="#transition-process-5" class="scroll">Is there any change in the social investing
+            model?</a></li>
+        <li><a href="#transition-process-6" class="scroll">What will happen to my account on RangDe.org?</a>
+        </li>
+        <li><a href="#transition-process-7" class="scroll">Why am I not seeing my old history in the new
+            platform?</a></li>
+        <li><a href="#transition-process-8" class="scroll">There have been delays in repayments. Why is
+            that?</a></li>
+        <li><a href="#transition-process-9" class="scroll">Is a partial conversion of Rang De credit into
+            donations possible?</a></li>
+        <li><a href="#transition-process-10" class="scroll">Would I receive an 80G if I convert my old
+            investments into donations today?</a></li>
+        <li><a href="#transition-process-11" class="scroll">Is the interest income I receive on my earlier
+            investments taxable? </a></li>
+        <li><a href="#transition-process-12" class="scroll">What are the implications of the changes on the
+            investees that Rang De works with after the transition?</a></li>
+      </ul>
+
+      <h4>About Rang De</h4>
+      <ul>
+        <li>
+          <h5 id="about-us-1">What is this initiative about?</h5>
+          <p> Rang De is India’s first social peer to peer lending platform that enables individuals to invest
+            in other individuals from low income households, expanding access to low-cost credit for
+            fundamental needs like livelihood and education.</p>
+        </li>
+        <li>
+          <h5 id="about-us-2">What's the difference between the Rang De model and traditional micro-finance?
+          </h5>
+          <p> The two key differences between Rang De and traditional microfinance institutions are: 1) Rang
+            De's focus on lowering interest rates by leveraging P2P (Peer to Peer) fundraising model, and 2)
+            The choice architecture offered to Rang De investees - they can choose exactly when and how much
+            they would like to borrow.</p>
+        </li>
+        <li>
+          <h5 id="about-us-3">What is the interest rate breakup on the loan products that Rang De offers?</h5>
+          <p>Rang De charges an interest rate of 18% APR out of which a maximum of 7.2% is given to the impact partner, a maximum of 7.2% is given to to the social
+            investor and the remaining lands with Rang De.
+          </p>
+        </li>
+      </ul>
+
+      <h4>Microcredit</h4>
+      <ul>
+        <li>
+          <h5 id="micro-credit-1">What is Microcredit? </h5>
+          <p>Microcredit refers to small size loans that are collateral free, and are lent to low income
+            households to meet their working capital/consumption needs. Typically, the loan size varies from
+            INR 1,000 to INR 50,000. These loans are usually utilized for income generation activities. The
+            investee then repays the loans according to a pre-set repayment plan.</p>
+        </li>
+
+        <li>
+          <h5 id="micro-credit-2">How can Microcredit make a difference? </h5>
+          <p>Microcredit provides the much-needed access to the credit required by low-income households in
+            Indian villages, semi-urban and urban areas. It releases them from the clutches of exploitative
+            money lenders and provides them a fair opportunity to grow. </p>
+
+          <p>An example: Malabai Laxman Mujmule, a differently abled individual, runs a grocery shop in her
+            locality. She took over the store after her father passed away; she procures goods and attends
+            to the store. She realized that her earnings would increase if she offered new items for sale,
+            but lacked the spare funds required for such an expansion. So, she applied to Rang De for a
+            loan. After successfully utilising her loan and expanding her inventory, her earnings have
+            increased. She now earns around INR 7,000 per month and is able to save half of that amount
+            becoming, financially independent and more easily able to take care of her elderly mother. Like
+            Malabai, there are thousands of people across India who are working hard towards financial
+            independence. Fair microcredit provides the means to achieve this independence. </p>
+
+        </li>
+        <li>
+          <h5 id="micro-credit-3">How does traditional microfinance work? </h5>
+          <p>Traditionally, microfinance institutions borrow capital from banks at a fixed rate of interest
+            and the MFI then adds the cost of servicing the loan before disbursing it to the investee. The
+            interest paid by the investees of a microfinance institution is a lot more than the interest
+            paid by a Rang De investee.</p>
+        </li>
+        <li>
+          <h5 id="micro-credit-4">What is an MFI? </h5>
+          <p>An MFI is a Microfinance Institution. Most MFIs are non-governmental organisations registered as
+            trusts, NBFCs or societies. Microfinance is the provision of financial services to low-income
+            clients or solidarity lending groups including consumers and the self-employed that
+            traditionally lack access to banking and related services. More broadly, it is a movement whose
+            object is "a world in which as many poor and near-poor households as possible have permanent
+            access to an appropriate range of high quality financial services, including not just credit but
+            also savings, insurance, and fund transfers.'' Those who promote microfinance generally believe
+            that such access will help poor people find their way out of poverty.</p>
+        </li>
+      </ul>
+
+      <h4>Microventure</h4>
+      <ul>
+        <li>
+          <h5 id="micro-venture-1">What is Microventure?</h5>
+          <p>A micro venture in Rang De’s context refers to a community-owned/managed enterprise that is
+            engaged in a business activity. A micro-venture aims to solve the problem of market access and
+            achieve economies of scale through collectivisation and by providing small-scale producers
+            access to a common platform for marketing and essential services.</p>
+        </li>
+        <li>
+          <h5 id="micro-venture-2">How do Microventures make a difference?</h5>
+          <p>Microventures have helped weavers find markets, farmers learn new techniques and get input
+            services at below market rates. By fostering cooperation and collaboration among community
+            members, and introducing a business-oriented approach to livelihood activities, microventures
+            promote community development in a sustainable manner.</p>
+        </li>
+        <li>
+          <h5 id="micro-venture-3">How are Microventures traditionally financed?</h5>
+          <p>Traditionally, microventures can get loans from banks and other microfinance institutions, but at
+            high rates of interest and at terms that are not always suitable for the organisation. While
+            they offer stable wages to their members, they take on the risk of selling their wares (produce,
+            woven products, food products, etc) which makes it difficult for them to achieve sustainability.
+          </p>
+        </li>
+        <li>
+          <h5 id="micro-venture-4">How do Rang De loans make a difference? </h5>
+          <p>Rang De designs custom credit interventions for microventures, after careful consultation with
+            the Impact Partner Management and community members, taking into account their unique needs and
+            circumstances. Rang De loans offer them much-needed financial support and even greater
+            visibility. Often times through Rang De, the microventures connect with individuals who are keen
+            to partner further in advancing their social mission. </p>
+        </li>
+      </ul>
+
+      <h4>Investing on RangDe.in </h4>
+      <ul>
+        <li>
+          <h5 id="invest-1">What are the minimum and maximum investments that I can make? </h5>
+          <p>An individual can invest any amount between INR 100 and INR 50 lacs, at a given point of time
+            across all P2P lending platforms. The investment per investee cannot exceed INR 50,000. </p>
+        </li>
+        <li>
+          <h5 id="invest-2">Where can I track my investment? </h5>
+          <p>You can log into your dashboard using your email address registered on RangDe.in. Through your
+            dashboard, you can access the details of your investments, the investees you have funded and the
+            repayment progress made by each investee. You will also receive a monthly email statement of the
+            investments you make. </p>
+        </li>
+        <li>
+          <h5 id="invest-3">Are investments on the Rang De platform taxable? </h5>
+          <p>Yes, investments made on the Rang De platform are taxable. Rang De does not deduct any tax at
+            source. We will provide an interest certificate at the end of each financial year, which will
+            help you assess your tax liability. We recommend that you consult your tax advisor to assess
+            your tax liability. </p>
+        </li>
+        <li>
+          <h5 id="invest-4">Do I receive any interest on the invested amount? </h5>
+          <p>Yes, you will receive interest on the invested amount, the interest will vary from loan product
+            to loan product, on an average the investors receive up-to 9% interest PA over their
+            investments. Detailed information on the rate of interest would be displayed on every investee’s
+            profile page. </p>
+        </li>
+        <li>
+          <h5 id="invest-5">Will I get a receipt for every investment I make? </h5>
+          <p>When you make an investment on Rang De, you will receive an email receipt confirming the details
+            of the investment. You will receive email notifications for all online transactions that you
+            make on the website. Please get in touch with us if you do not receive these updates.</p>
+          <p>
+            Additionally you will receive a loan agreement between you and each of the entrepreneurs and
+            students that you invested in, via email.
+          </p>
+        </li>
+        <li>
+          <h5 id="invest-6"> What is fund by date? </h5>
+          <p>For every entrepreneur or student who applies for a loan, there is a waiting period of 30 days
+            during which the loan amount needs to be raised. The fund by date indicates the cut off date by
+            which social investors need to fund the investee’s loan. </p>
+        </li>
+        <li>
+          <h5 id="invest-7">What happens if a loan is not funded by the ‘fund by’ date? </h5>
+          <p>When we receive a loan application from an entrepreneur or student, we ask for their consent to
+            extend the ‘fund by’ date by 15 days, in a situation where the loan is not yet fully funded. If
+            this consent is provided, the ‘fund by’ date is extended forward by 15 days. If even after this
+            extension, the loan is still not fully funded, the loan will be cancelled and the amounts
+            invested will be returned to each social investor’s Rang De credit. For investees who do not
+            give us consent to extend the ‘fund by’ date, the loan is cancelled immediately, without an
+            extension being made, and the amounts invested will be returned to each social investor’s Rang
+            De credit.</p>
+        </li>
+        <li>
+          <h5 id="invest-8">Why does the investee pay 18% when Social Investors only get a return of up to 7.2%?
+          </h5>
+          <p>The interest paid by the investee, 18% p.a, is split between the Impact Partner, Rang De &amp;
+            Social Investors. Rang De's Impact Partners play a very important role in identifying investees,
+            facilitating disbursal of loans and recovery. The Impact Partner incurs expenses and 7.2% is just
+            about enough to manage these costs. As a Social Investor, Rang De gives you the same return that
+            you would earn on any bank fixed deposit account. </p>
+        </li>
+        <li>
+          <h5 id="invest-9">Can I use a credit card as a payment option?</h5>
+          <p>Yes, you can use your credit card to make a payment. However, this cannot be done directly- you have to use your credit card through any of your existing wallets such as Amazon Pay, Phone Pe, Mobikwik, etc.</p>
+        </li>
+      </ul>
+
+      <h4>Process for NRIs and OCI card holders </h4>
+      <ul>
+        <li>
+          <h5 id="process-1">Do you accept investments from Non-Resident Indians and Overseas Citizens of
+            India card holders?
+          </h5>
+          <p>Yes, we accept investments from Non-Resident Indians and Overseas Citizens of India card holders,
+            as long as you have valid KYC documents. However,
+            investments can only be made in Indian currency through an Indian bank account.
+
+          </p>
+        </li>
+        <li>
+          <h5 id="process-2">What are the KYC requirements for NRIs and OCI card holders? </h5>
+          <p>As an NRI or OCI card holder, you are required to either submit your Adhaar card if you have one,
+            or your PAN card along with a valid address proof (passport
+            or OCI card). As per RBI guidelines on KYC and instructions issued under Know Your Customer
+            (KYC) norms /Anti-Money Laundering (AML) standards/Combating
+            Financing of Terrorism (CFT)/Obligation of banks and financial institutions under Prevention of
+            Money Laundering Act, 2002, Rang De is required to maintain
+            the KYC documents of all its social investors.
+          </p>
+        </li>
+        <li>
+          <h5 id="process-3">What are the payment options for NRIs and OCI card holders? </h5>
+          <p>We accept payments in Indian currency from Non Resident Rupee accounts maintained with Banks in India. RBI regulations do not permit us to accept payments from overseas Bank accounts or international cards issued overseas.
+          </p>
+        </li>
+      </ul>
+
+      <h4>Withdrawing your Rang De Credit </h4>
+      <ul>
+        <li>
+          <h5 id="withdraw-credit-1">I am an existing Rang De social investor and would like to withdraw the
+            investments I have made. What are the terms and conditions for withdrawal? </h5>
+          <p>You can withdraw the repayments that are credited to your Rang De account. Withdrawals can only be made to a bank account in India.</p>
+        </li>
+        <li>
+          <h5 id="withdraw-credit-2">How can I place a withdrawal request? </h5>
+          <p>You can place a withdrawal request through your dashboard. We will transfer the money to your bank account within 1 business day.</p>
+        </li>
+        <li>
+          <h5 id="withdraw-credit-3">Are there any charges for withdrawals?</h5>
+          <p>There are no charges for withdrawals. </p>
+        </li>
+        <li>
+          <h5 id="withdraw-credit-4">Can I withdraw my Rang De Credit to a bank account abroad? </h5>
+          <p>No, we will only entertain withdrawal requests to bank accounts in India or a rupee pegged NRO
+            bank account. </p>
+        </li>
+      </ul>
+
+      <h4>Rang De's Processes</h4>
+      <ul>
+        <li>
+          <h5 id="rangde-process-1">How does the Rang De model work? </h5>
+          <p>Social investors (SI) can choose an entrepreneur or student that they would like to support
+            through Rang De, from our listing of entrepreneurs and students. SIs can invest as little as INR
+            100 in an investee’s loan. Once the loan is fully funded, the funds are transferred straight to
+            the investee's bank account. The investee repays the loan according to a repayment schedule. SIs
+            receive their money in the form of Rang De credit as soon as the investee starts paying the
+            EMIs. Rang De credit can be used to fund other loans for entrepreneurs and students or can be
+            withdrawn to the SIs bank account. </p>
+        </li>
+        <li>
+          <h5 id="rangde-process-2">How long does Rang De take to screen investees? </h5>
+          <p>We aim to process loan application forms as quick as we can. They are screened and uploaded on
+            RangDe.in within a week of receiving them from our Impact Partners. </p>
+        </li>
+        <li>
+          <h5 id="rangde-process-3">Where are Rang De's investees located? </h5>
+          <p>Rang De's investees are from underserved communities all across India. Our focus is on states
+            where a large section of the population is not financially included and need access to fair
+            microcredit. The majority of Rang De’s investees hail from remote rural areas. </p>
+        </li>
+        <li>
+          <h5 id="rangde-process-4">Can I submit an investee application for myself? </h5>
+          <p>You can refer someone you know closely, like your domestic worker, cook, driver etc. to receive a loan through Rang De’s platform. Go to <a th:href="@{/influence}">https://rangde.in/influence</a> to get started.</p>
+        </li>
+        <li>
+          <h5 id="rangde-process-5">Why do so many investees have the same occupation? </h5>
+          <p>Investees having similar occupations are often members of the same group or belong to the same
+            community, and, hence are involved in similar livelihood activities. This is an indicator of
+            group homogeneity. </p>
+        </li>
+        <li>
+          <h5 id="rangde-process-6">Why are the surnames of some investees the same? Are they part of the same
+            family? </h5>
+          <p>At times, entrepreneurs and students belonging to a particular community can have similar
+            surnames and, also be involved in similar livelihood activities. </p>
+        </li>
+        <li>
+          <h5 id="rangde-process-7">How are the investee profiles listed on the website compiled? </h5>
+          <p>We receive loan application forms from our Impact Partners that are KYC (Know Your Customer)
+            compliant. The data on the application form is used to create profiles for the investees and
+            then these profiles are uploaded on to the website. </p>
+        </li>
+      </ul>
+
+      <h4>Investee Application Process </h4>
+      <ul>
+        <li>
+          <h5 id="investee-process-1">Who are Rang De investees? </h5>
+          <p>Rang De investees are individuals from low-income households who require access to fair credit.
+            The loan you give as a Social Investor is utilized to meet fundamental needs like livelihood and
+            education. </p>
+        </li>
+        <li>
+          <h5 id="investee-process-2">How are the investees selected? </h5>
+          <p>Investees are selected by Impact Partners based on their family income, their access to finance
+            from traditional sources and other socio-economic factors. Our aim is to reach out to
+            underserved communities, focussing especially on first-time investees. All investees go through
+            a financial literacy training module and their understanding is evaluated based on a financial
+            literacy assessment. </p>
+        </li>
+      </ul>
+
+      <h4>Rang De's Impact partners </h4>
+      <ul>
+        <li>
+          <h5 id="impact-partners-1">Who is an Impact Partner? </h5>
+          <p>Rang De works with community-based organizations doing extraordinary work in grassroots India.
+            These organizations share Rang De’s vision of making fair credit accessible to all. </p>
+        </li>
+        <li>
+          <h5 id="impact-partners-2">Why do we need Impact Partners? </h5>
+          <p>Our Impact Partners play a crucial role in identifying the need and curating entrepreneur and
+            student profiles, facilitating disbursal and recovery of loans. They are also responsible for
+            conducting financial literacy training, hand holding and mentoring individual investees and
+            providing much needed guidance on effective financial management and loan utilization to boost
+            incomes. We work through a network of Impact Partners identified after a thorough due diligence
+            process. We do not lend to individuals or groups directly. Our Impact Partners also help us
+            track the social and economic impact of Rang De loans on the community. </p>
+        </li>
+        <li>
+          <h5 id="impact-partners-3">Why do impact partners get a big portion of the interest? </h5>
+          <p>Our Impact Partners are responsible for identifying need and curating the profiles of the
+            entrepreneurs and students, facilitating disbursal and recovery of loans. They also conduct
+            financial literacy sessions for all community members. Further, they facilitate impact
+            assessment visits by Rang De team members. Impact partners incur significant expenses ensuring
+            the success of the Rang De model and the 7.2% interest component they receive is just enough to
+            manage these costs. </p>
+        </li>
+      </ul>
+
+      <h4>Interest Rates </h4>
+      <ul>
+        <li>
+          <h5 id="interest-rates-1">What is APR? </h5>
+          <p>APR (Annual Percentage Rate) refers to the interest rate on a loan that is calculated on reducing
+            balance of principal outstanding. For example, if a loan of INR 12,000 is taken for a year at
+            18% p.a.(APR), the total EMI would come up to INR 1,100/- considering a monthly repayment
+            frequency. As the investee makes each repayment, the principal outstanding keeps reducing &amp;
+            hence reducing the interest to be paid as well. </p>
+        </li>
+        <li>
+          <h5 id="interest-rates-2">How different is APR from the flat rate method? </h5>
+          <p>A flat rate of 10% would essentially convert itself into an APR of 18%. The major difference is
+            with respect to the reduction of principal with every installment repaid by the investee. In the
+            flat-rate model, this reduction is not factored in.</p>
+        </li>
+      </ul>
+
+      <h4>Transition from RangDe.org to RangDe.in </h4>
+      <ul>
+        <li>
+          <h5 id="transition-process-1">What is the difference between the RangDe.org and RangDe.in? </h5>
+          <p>RangDe.org is registered as a charitable trust. Because of the RBI regulation restricting peer to
+            peer lending only to Non-Banking Financial Companies (NBFCs - For-Profit Entity), the new entity
+            RangDe.in is registered as an NBFC P2P. </p>
+        </li>
+        <li>
+          <h5 id="transition-process-2">What will happen to the funds that are invested on RangDe.org? </h5>
+          <p>You can withdraw funds invested through RangDe.org by placing a withdrawal request through your
+            dashboard on RangDe.org. You can then choose to reinvest these funds through the new platform
+            RangDe.in. </p>
+        </li>
+        <li>
+          <h5 id="transition-process-3">What will happen to funds that have not been repaid? </h5>
+          <p>Repayments will continue to be collected and will be credited to your Rang De account on
+            RangDe.org. Once you set up auto withdraw from your dashboard, the repayments collected to your
+            RangDe.org account will be auto withdrawn to your bank account. </p>
+        </li>
+        <li>
+          <h5 id="transition-process-4">What is the difference between the old platform and the new? </h5>
+          <p>The new web platform is designed for you to have a much faster and more intuitive social
+            investing experience. The core offering of social investing remains the same. </p>
+        </li>
+        <li>
+          <h5 id="transition-process-5">Is there any change in the social investing model? </h5>
+          <p>The new platform will allow you to participate as a social investor, just like you on RangDe.org
+            before the RBI regulation. This means that when the loan is repaid by our investees, you have a
+            choice – to either re-invest in another entrepreneur or student, or to withdraw your funds.
+            Social investors will continue to earn interest on the loans they give. The interest will be up
+            to 9%. </p>
+        </li>
+        <li>
+          <h5 id="transition-process-6">What will happen to my account on RangDe.org? </h5>
+          <p>Your account on RangDe.org will remain accessible for as long as re-payments are being collected.
+          </p>
+        </li>
+        <li>
+          <h5 id="transition-process-7">Why am I not seeing my old history in the new platform? </h5>
+          <p>Unfortunately, we are not able to migrate your social investment history from RangDe.org to your
+            account on the new platform RangDe.in. The new platform sits under a different legal entity
+            (Non-Banking Financial Company) and hence your investment history cannot be reflected on the new
+            platform. </p>
+        </li>
+        <li>
+          <h5 id="transition-process-8">There have been delays in repayments. Why is that? </h5>
+          <p>We have processes set up to coordinate/follow up with the entrepreneurs and students to ensure
+            that repayments are happening on time. However, there is a chance of repayments being delayed
+            from the investee due to unavoidable circumstances like a Medical emergency, Natural Disaster,
+            etc. which would be duly intimated to you. In a case where you haven't received a repayment on
+            time &amp; need to know more about it, you can reach out to our support team, by sending us an
+            email on support@rangde.in. </p>
+        </li>
+        <li>
+          <h5 id="transition-process-9">Is a partial conversion of Rang De credit into donations possible?
+          </h5>
+          <p>No. Conversion of existing Rang De credit (and future receivables) into donations is only
+            possible in entirety. </p>
+        </li>
+        <li>
+          <h5 id="transition-process-10">Would I receive an 80G if I convert my old investments into donations
+            today? </h5>
+          <p>80G can only be issued for those who choose to do the conversion and had made their first social
+            investment in the financial year 2017-18. For the older social investors, due to the
+            complications arising from accounting purposes, the conversion to donations can be done without
+            the issuance of an 80G certificate. </p>
+        </li>
+        <li>
+          <h5 id="transition-process-11">Is the interest income I receive on my earlier investments taxable?
+          </h5>
+          <p>Yes. If you choose to withdraw your investments into your bank account you would have to declare
+            the interest received on your earlier investments when you file your tax returns for the
+            relevant financial period. </p>
+        </li>
+        <li>
+          <h5 id="transition-process-12">What are the implications of the changes on the investees that Rang
+            De works with after the transition? </h5>
+          <p>For the investees there are no changes in terms of their relationship with Rang De or the Impact
+            Partner. They will continue to receive micro loans at the same interest rates, and they will
+            have to repay these loans with the same levels of discipline and rigor. The big change, however,
+            is that investees will now receive their loans straight into their bank accounts and repayments
+            will also be auto deducted straight from their bank accounts. This creates an opportunity for
+            entrepreneurs and students to get better acquainted with digital banking facilities. Also, the
+            loan agreement that an investee will now sign will be between Rang De and the investee, unlike
+            previously where Rang De and the partner acted as agents on behalf of the social investors and
+            investees respectively. </p>
+        </li>
+
+
+      </ul>
+    </div> -->
+
+    <!-- new code -->
+
+    <div class="faq_container_full">
+      <h1 class="faq_heading">Frequently Asked Questions</h1>
+      <section class="left_side_section">
+        <h1 class="faq_left_heading">Frequently Asked Questions</h1>
+        <div class="heading_content">
+          <a href="#about-us-1" class="scroll"><button class="questions_heading">About Rang De</button></a>
+          <a href="#about-us-2" class="scroll"><button class="questions_heading">How does Rang De work?</button></a>
+          <a href="#about-us-3" class="scroll"><button class="questions_heading">Investing on RangDe.in</button></a>
+          <a href="#about-us-4" class="scroll"><button class="questions_heading">Repayments & Interest
+              Rates</button></a>
+          <a href="#about-us-5" class="scroll"><button class="questions_heading">NRIs & OCI card holders</button></a>
+        </div>
+      </section>
+
+      <section class="right_side_section">
+
+        <div class="answer_section">
+          <div id="about-us-1">
+            <ul>
+              <p class="sub_question_heading">What is Rang De’s mission?</p>
+              <p>Rang De is on a mission to revolutionize credit access and enable financial inclusion for every
+                individual in India. We are focused on providing affordable and timely credit access to unbanked
+                individuals in the country. To know more about us, visit <a class="visit_page" href="/about/our-story">/about/our-story</a>
+              </p>
+            </ul>
+            <ul>
+              <p class="sub_question_heading"> What is unique about Rang De?</p>
+              <p>Rang De is India’s pioneering and only peer to peer lending platform focused on providing timely and
+                affordable credit to unbanked communities. </p>
+            </ul>
+            <ul>
+              <p class="sub_question_heading"> Is Rang De a crowdfunding platform?</p>
+              <p>No, Rang De is not a crowdfunding platform. A crowdfunding platform primarily raises donations and
+                enables users to do the same for specific causes. Crowdfunding of donations is unregulated and does not
+                come under the purview of any regulator.</p>
+
+                <p>Rang De on the other hand is an RBI regulated peer to peer lending platform. Unlike in crowdfunding,
+                individuals lend money towards livelihood and education needs of communities. Individuals who receive
+                the loans repay it as per a predefined repayment schedule. This can be either withdrawn or reinvested.
+              </p>
+            </ul>
+            <ul>
+              <p class="sub_question_heading">Is Rang De an NGO?</p>
+              <p>No, Rang De is not an NGO. Rang De is an RBI regulated NBFC P2P platform.</p>
+            </ul>
+            <ul>
+              <p class="sub_question_heading">How does Rang De sustain itself?</p>
+              <p>Rang De charges a platform access fees from its impact partners. This is paid through a one time setup fees, annual recurring fees and processing fees to access credit for their communities through the platform. To know more about our impact partners, check <a class="visit_page" href="rangde.in/faqs/who-are-impact-partners-what-do-they-do">rangde.in/faqs/who-are-impact-partners-what-do-they-do</a></p>
+            </ul>
+            <ul>
+              <p class="sub_question_heading">Is Rang De regulated by RBI?</p>
+              <p>Yes, Rang De is regulated by RBI.</p>
+            </ul>
+            <ul>
+              <p class="sub_question_heading">How is Rang De different from existing P2P platforms?</p>
+              <p>Rang De provides credit access at the lowest rate, along with flexibility for the investees to choose
+                exactly when and how much they want to borrow.
+              </p>
+            </ul>
+          </div>
+          <br>
+           <!-- talk to ram & smita section -->
+           <p class="more_question_heading">Have more questions?</p>
+           <section class="luma-section">
+             <iframe class="luma-iframe" src="https://lu.ma/embed-checkout/evt-VwjRK5y6WDL5zCr" frameborder="0"
+               style="border:1px solid #bfcbda88;border-radius:4px; width: 90%; height: 500px; margin-left: 10%;"
+               allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+           </section>
+ 
+           <!--  -->
+           <br>
+          <!----------->
+          <div id="about-us-2">
+            <ul>
+              <p class="sub_question_heading">How does the Rang De model work?</p>
+              <p>Social investors invest in an investee or fund of their choice. Each social investor invests an amount
+                of their choice, starting with Rs. 100. Once a loan is fully funded through these investments, the funds
+                are transferred directly to the investee’s bank account. The investee repays the loan according to a
+                repayment schedule, and the social investors receive these repayments in the form of Rang De credit in
+                their dashboard. This credit can be reinvested or withdrawn to the social investor’s bank account.</p>
+            </ul>
+            <ul>
+              <p class="sub_question_heading">How does Rang De curate investees?</p>
+              <p>Rang De has a network of impact partners across the country. These organizations identify individuals
+                who need credit within the communities they work with. To know more about our impact partners, visit
+               <a class="visit_page" href="rangde.in/know-the-partner">rangde.in/know-the-partner</a>
+              </p>
+            </ul>
+            <ul>
+              <p class="sub_question_heading">Who are Impact Partners? What do they do?</p>
+              <p>
+                Impact partners are credible organizations across the country that work with underserved communities.
+                They empower these communities through entrepreneurship training, capacity building, providing access to
+                markets, and more. Their partnership with Rang De augments their work by providing credit access to
+                these communities. To know more about our impact partners, visit <a class="visit_page" href="rangde.in/know-the-partner">rangde.in/know-the-partner</a> 
+              </p>
+            </ul>
+          </div>
+
+<br>
+          <!--  -->
+          <div id="about-us-3">
+            <ul>
+              <p class="sub_question_heading">How do I make an investment?</p>
+              <p>
+                You can make an investment in 3 simple steps:</p>
+               <p>1. Choose an investee or fund to invest in</p> 
+               <p> 2. Enter an amount to invest</p> 
+               <p> 3. Make the payment</p> 
+               <p> You can find all investees and funds on <a class="visit_page" href="rangde.in/invest ">rangde.in/invest </a></p>
+            </ul>
+            <ul>
+              <p class="sub_question_heading">What are the payment options to make an investment?</p>
+              <p>You can pay using debit card, net banking, UPI, or any wallet such as Amazon Pay, Mobikwik, Phone Pe,
+                etc.</p>
+                <p>You can also make a payment using a credit card. However, this cannot be done directly- you have to use
+                your credit card through any of your existing wallets such as Amazon Pay, Mobikwik, Phone Pe, etc.
+              </p>
+            </ul>
+
+            <ul>
+              <p class="sub_question_heading">What is the minimum investment I can make?</p>
+              <p>You can invest as little as Rs.100 on Rang De.</p>
+            </ul>
+            <ul>
+              <p class="sub_question_heading">What is the maximum investment I can make?</p>
+              <p>You can invest upto Rs.50,000 in an individual investee. You can invest a total of upto Rs.50,00,000
+                across different investees or funds on the platform.
+              </p>
+            </ul>
+            <ul>
+              <p class="sub_question_heading">Where can I track my investments and repayments?</p>
+              <p>You can track all your investment and portfolio related details through your <a class="visit_page" href="/dashboard">dashboard</a>.</p>
+            </ul>
+            <ul>
+              <p class="sub_question_heading">What is KYC? Why is it needed?</p>
+              <p>KYC (Know Your Customer) is the mandatory process of verifying your identity. RBI prohibits us to
+                disburse your investment to any investee unless your KYC is complete. This helps us ensure that only
+                verified social investors use our platform.
+                </p>
+            </ul>
+
+            <ul>
+              <p class="sub_question_heading">I can see many loans that are partly funded. Will all of them get fully funded?</p>
+              <p>Rang De ensures that 100% loans listed on the platform get fully funded. The loans are prioritized according to the urgency of the credit requirement of the investee.</p>
+            </ul>
+
+            <ul>
+              <p class="sub_question_heading">
+                How can I withdraw my money?</p>
+              <p>You can withdraw your money from your <a class="visit_page" href="/dashboard"> dashboard </a>to any Indian bank account. The money will be
+                transferred to your bank account within 1 day. There are no extra charges for this process.
+              </p>
+            </ul>
+
+          </div>
+<br>
+          <!--  -->
+          <div id="about-us-4">
+            <ul>
+              <p class="sub_question_heading"> How does Rang De ensure that I get my money back?</p>
+              <p>Rang De works with a set of credible and ethical community organizations or social enterprises called impact partners. These organizations identify communities engaged in sustainable livelihoods, but do not have access to institutional credit. They mentor these communities in effectively utilizing and repaying this credit, leading to an excellent repayment rate on Rang De. However, as per RBI regulations, we cannot guarantee any repayments on the platform. To know more about our repayment statistics, visit <a class="visit_page" href="rangde.in/track-record">rangde.in/track-record</a></p>
+            </ul>
+            <ul>
+              <p class="sub_question_heading">How much interest will I earn if I invest?</p>
+              <p>You can earn upto 10% flat per annum through your investments. Your returns vary across different
+                investees and funds that you invest in- these are visible upfront in the investee or fund details before
+                and during investment.</p>
+            </ul>
+
+          </div>
+<br>
+          <!--  -->
+          <div id="about-us-5">
+            <ul>
+              <p class="sub_question_heading"> Can I invest as an NRI or OCI card holder?</p>
+              <p>Yes, we accept investments from NRIs and OCI card holders. The investments must be made in Indian
+                currency through an Indian bank account.
+              </p>
+            </ul>
+            <ul>
+              <p class="sub_question_heading">What are the KYC requirements for NRIs and OCI card holders?</p>
+              <p>You are required to either submit your Aadhaar card if you have one, or your PAN card along with a
+                valid address proof (passport or OCI card)
+              </p>
+            </ul>
+            <ul>
+              <p class="sub_question_heading">
+                What are the payment options for NRIs and OCI card holders?</p>
+              <p>We accept payments in Indian currency from Non Resident Rupee accounts maintained with Banks in India.
+                RBI regulations do not permit us to accept payments from overseas Bank accounts or international cards
+                issued overseas.
+              </p>
+            </ul>
+          </div>
+        
+        </div>
+
+
+
+
+      </section>
+
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        
+        let scroll_link = $('.scroll');
+        scroll_link.click(function (e) {
+          e.preventDefault();
+          var scroll_height = window.innerWidth > 767 ? 80 : 220;
+          let url = $('body').find($(this).attr('href')).offset().top - scroll_height;
+          $('html, body').animate({
+            scrollTop: url
+          }, 700);
+          $(this).parent().addClass('active');
+          $(this).parent().siblings().removeClass('active');
+          return false;
+        });
+      });
+      
+    </script>
+  </main>
+</body>
+
+</html>
