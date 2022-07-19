@@ -1,0 +1,136 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #slider {
+	margin: 2em auto;
+	width: 960px;
+	overflow: hidden;
+}
+
+#slider-wrapper {
+	width: 9999px;
+	height: 300px;
+	position: relative;
+	transition: left 400ms linear;
+}
+
+.slide {
+	float: left;
+	width: 960px;
+	height: 300px;
+	position: relative;
+}
+
+#slider-nav {
+	margin: 1em 0;
+	text-align: center;
+}
+
+#slider-nav a {
+	width: 2em;
+	height: 2em;
+	border: 1px solid #ccc;
+	text-align: center;
+	text-decoration: none;
+	color: #000;
+	display: inline-block;
+	line-height: 2;
+	margin-right: 0.5em;
+}
+
+#slider-nav a.current {
+	border-color: #000;
+}
+
+</style>
+<body>
+    <div id="slider">
+        <div id="slider-wrapper">
+            <div class="slide">
+                <img src="http://lorempixel.com/960/300/sports" alt="their" />
+            </div>
+            <div class="slide">
+                <img src="http://lorempixel.com/960/300/business" alt="hie" />
+            </div>
+            <div class="slide">
+                <img src="http://lorempixel.com/960/300/animals" alt="hie234" />
+            </div>
+            <div class="slide">
+                <img src="http://lorempixel.com/960/300/food" alt="hieqcc" />
+            </div>
+            <div class="slide">
+                <img src="http://lorempixel.com/960/300/nature" alt="hieqef" />
+            </div>
+        </div>
+        <div id="slider-nav">
+            <a href="#" data-slide="0">1</a>
+            <a href="#" data-slide="1">2</a>
+            <a href="#" data-slide="2">3</a>
+            <a href="#" data-slide="3">4</a>
+            <a href="#" data-slide="4">5</a>
+        </div>
+    </div>	
+    
+</body>
+<script>
+    function Slider( element ) {
+	this.el = document.querySelector( element );
+	this.init();
+}	
+
+Slider.prototype = {
+	init: function() {
+		this.links = this.el.querySelectorAll( "#slider-nav a" );
+		this.wrapper = this.el.querySelector( "#slider-wrapper" );
+		this.navigate();
+	},
+	navigate: function() {
+	
+		for( var i = 0; i < this.links.length; ++i ) {
+			var link = this.links[i];
+			this.slide( link );	
+		}
+	},
+	
+	slide: function( element ) {
+		var self = this;
+		element.addEventListener( "click", function( e ) {
+			e.preventDefault();
+			var a = this;
+			self.setCurrentLink( a );
+			var index = parseInt( a.getAttribute( "data-slide" ), 10 ) + 1;
+			var currentSlide = self.el.querySelector( ".slide:nth-child(" + index + ")" );
+			
+			self.wrapper.style.left = "-" + currentSlide.offsetLeft + "px";
+			
+		}, false);
+	},
+	setCurrentLink: function( link ) {
+		var parent = link.parentNode;
+		var a = parent.querySelectorAll( "a" );
+		
+		link.className = "current";
+		
+		for( var j = 0; j < a.length; ++j ) {
+			var cur = a[j];
+			if( cur !== link ) {
+				cur.className = "";
+			}
+		}
+	}	
+};
+
+document.addEventListener( "DOMContentLoaded", function() {
+	var aSlider = new Slider( "#slider" );
+	
+});
+	
+
+</script>
+</html> -->
